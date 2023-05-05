@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Registro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Registrar</h1><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <form action="../controller/registro.php" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label>Nome de Usuário</label>
+            <input type="text" class="form-control" name="user" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Senha</label>
+            <input type="password" class="form-control" name="senha" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Registrar</button>
+          <a class="dropdown-item" href="logar.html">Já tem uma conta? Faça o login agora mesmo</a>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
